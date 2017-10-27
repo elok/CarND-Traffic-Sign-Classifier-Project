@@ -185,8 +185,8 @@ For the first image, the model is relatively sure that this is a Children Crossi
 | 9.65084493e-01    	| Children crossing                             | 
 | 2.19391007e-02    	| Dangerous curve to the right					|
 | 8.20697751e-03		| Right-of-way at the next intersection 		|
-| 3.24571622e-03		| Beware of ice/snow 			 				|
-| 1.39030209e-03	    | Slippery road      							|
+| 3.24571622e-03		| Slippery road 			 				|
+| 1.39030209e-03	    | Beware of ice/snow      							|
 
 #### 2. General Caution (correct)
 For the second image, the model is relatively sure that this is a General Caution sign (probability of 0.99) and it is correct. The top five soft max probabilities were:
@@ -197,7 +197,7 @@ For the second image, the model is relatively sure that this is a General Cautio
 | 1.46633887e-04        | Traffic signals   							|
 | 1.61429607e-08		| Pedestrians									|
 | 5.97741691e-12		| Road narrows on the right     				|
-| 3.01055101e-12	    | Right-of-way at the next intersection 		|
+| 3.01055101e-12	    | Roundabout mandatory 		|
 
 #### 3. No Entry (correct)
 For the third image, the model is very sure that this is a No Entry sign (probability of 1.00) and it is correct. The top five soft max probabilities were:
@@ -206,9 +206,9 @@ For the third image, the model is very sure that this is a No Entry sign (probab
 |:---------------------:|:---------------------------------------------:| 
 | 1.00000000e+00    	| No entry   									| 
 | 1.84517361e-08    	| Stop 							    			|
-| 1.71995964e-08	    | Turn left ahead								|
-| 7.18487669e-09	 	| Turn right ahead								|
-| 1.58528024e-09	    | Roundabout mandatory      					|
+| 1.71995964e-08	    | Roundabout mandatory							|
+| 7.18487669e-09	 	| Turn left ahead								|
+| 1.58528024e-09	    | Turn right ahead      					|
 
 #### 4. No Passing (correct)
 For the fourth image, the model is relatively not sure that this is a No Passing sign (probability of 0.85) even though it is correct. The top five soft max probabilities were:
@@ -216,10 +216,10 @@ For the fourth image, the model is relatively not sure that this is a No Passing
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 8.58026385e-01      	| No passing   									| 
-| 8.98515508e-02        | Slippery road 								|
-| 4.57046144e-02		| End of no passing 							|
-| 3.00067966e-03		| Vehicles over 3.5 metric tons prohibited 		|
-| 1.19560328e-03	    | Children crossing    							|
+| 8.98515508e-02        | End of no passing 								|
+| 4.57046144e-02		| Vehicles over 3.5 metric tons prohibited							|
+| 3.00067966e-03		| Priority road 		|
+| 1.19560328e-03	    | Traffic signals    							|
 
 #### 5. Pedestrians Crossing (wrong)
 For the fifth image, the model is relatively not sure that this is a General Caution sign (probability of 0.30) and indeed it is wrong. The top five soft max probabilities were:
@@ -227,21 +227,21 @@ For the fifth image, the model is relatively not sure that this is a General Cau
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 3.01311731e-01    	| General caution  								| 
-| 1.64805323e-01     	| Traffic signals  								|
-| 1.49086207e-01		| Pedestrians		    						|
+| 1.64805323e-01     	| Road work  								|
+| 1.49086207e-01		| Traffic signals		    						|
 | 8.21653679e-02		| Road narrows on the right		 				|
-| 4.76247929e-02	    | Dangerous curve to the right  				|
+| 4.76247929e-02	    | Bicycles crossing  				|
 
 #### 6. Speed Limit 80 (wrong)
 For the sixth image, the model is relatively not sure that this is a Speed Limit 50km/h sign (probability of 0.93) and the image is a Speed Limit 80km/h. I can understand how a 5 can be interpreted as an 8. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 9.38957334e-01    	| Speed limit (50km/h)                      	| 
+| 9.38957334e-01    	| Speed limit (30km/h)                     	| 
 | 2.44693700e-02        | Speed limit (20km/h) 							|
-| 2.15990208e-02		| Speed limit (80km/h)							|
+| 2.15990208e-02		| Speed limit (50km/h)							|
 | 7.41989724e-03		| Speed limit (70km/h)					 		|
-| 2.53177667e-03	    | Speed limit (100km/h)      				    |
+| 2.53177667e-03	    | Speed limit (80km/h)      				    |
 
 #### 7. Turn Right Ahead (correct)
 For the seventh image, the model is relatively sure that this is a Turn Right Ahead sign (probability of 0.99) and it is indeed correct. The top five soft max probabilities were:
@@ -250,9 +250,9 @@ For the seventh image, the model is relatively sure that this is a Turn Right Ah
 |:---------------------:|:---------------------------------------------:| 
 | 9.99583066e-01    	| Turn right ahead   				        	| 
 | 2.17687164e-04    	| Ahead only 									|
-| 9.70542533e-05	    | Road work										|
-| 4.73325526e-05	  	| Right-of-way at the next intersection			|
-| 1.92722327e-05	    | Keep left      			    				|
+| 9.70542533e-05	    | Keep left										|
+| 4.73325526e-05	  	| Go straight or left			|
+| 1.92722327e-05	    | Stop      			    				|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
