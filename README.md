@@ -177,7 +177,7 @@ The model was able to correctly guess 4 of the 7 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 19th cell of the Ipython notebook.
 
-# 1. Double Curve (wrong)
+#### 1. Double Curve (wrong)
 For the first image, the model is relatively sure that this is a Children Crossing sign (probability of 0.88) but the image is a double curve. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
@@ -188,7 +188,7 @@ For the first image, the model is relatively sure that this is a Children Crossi
 | 1.16430800e-02		| Beware of ice/snow 			 				|
 | 6.69767335e-03	    | Slippery road      							|
 
-# 2. General Caution (correct)
+#### 2. General Caution (correct)
 For the second image, the model is relatively sure that this is a General Caution sign (probability of 0.99) and it is correct. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
@@ -199,7 +199,7 @@ For the second image, the model is relatively sure that this is a General Cautio
 | 1.32089326e-10		| Road narrows on the right     				|
 | 9.81628320e-12	    | Right-of-way at the next intersection 		|
 
-# 3. No Entry (correct)
+#### 3. No Entry (correct)
 For the third image, the model is relatively sure that this is a No Entry sign (probability of 0.99) and it is correct. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
@@ -210,7 +210,7 @@ For the third image, the model is relatively sure that this is a No Entry sign (
 | 5.30324724e-05	 	| Turn right ahead								|
 | 2.66978532e-05	    | Roundabout mandatory      					|
 
-# 4. No Passing (correct)
+#### 4. No Passing (correct)
 For the fourth image, the model is relatively not sure that this is a No Passing sign (probability of 0.73) even though it is correct. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
@@ -221,7 +221,7 @@ For the fourth image, the model is relatively not sure that this is a No Passing
 | 5.51116243e-02		| Vehicles over 3.5 metric tons prohibited 		|
 | 1.76423192e-02	    | Children crossing    							|
 
-# 5. Pedestrians Crossing (wrong)
+#### 5. Pedestrians Crossing (wrong)
 For the fifth image, the model is relatively not sure that this is a General Caution sign (probability of 0.53) and indeed it is wrong. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
@@ -232,7 +232,7 @@ For the fifth image, the model is relatively not sure that this is a General Cau
 | 1.81003790e-02		| Road narrows on the right		 				|
 | 1.43758226e-02	    | Dangerous curve to the right  				|
 
-# 6. Speed Limit 80 (wrong)
+#### 6. Speed Limit 80 (wrong)
 For the sixth image, the model is relatively not sure that this is a Speed Limit 50km/h sign (probability of 0.69) and the image is a Speed Limit 80km/h. I can understand how a 5 can be interpreted as an 8. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
@@ -243,7 +243,7 @@ For the sixth image, the model is relatively not sure that this is a Speed Limit
 | 3.51988822e-02		| Speed limit (70km/h)					 		|
 | 9.10976343e-03	    | Speed limit (100km/h)      				    |
 
-# 7. Turn Right Ahead (correct)
+#### 7. Turn Right Ahead (correct)
 For the seventh image, the model is relatively sure that this is a Turn Right Ahead sign (probability of 0.99) and it is indeed correct. The top five soft max probabilities were:
 
 | Probability         	|     Prediction	        					| 
